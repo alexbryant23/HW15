@@ -1,0 +1,78 @@
+h1,
+h2 {
+    color: white;
+    font-family: 'oswald' 'sonsie one';
+    margin: 10px;
+}
+
+h1{
+    font-family: 'Oswald', serif;
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+h2{ 
+    font-family: 'Sonsie One';
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    background: black;
+}
+
+section {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.box {
+    background-color: white;
+    margin-top: 2px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr;
+    color: black;
+    background-color: white;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+section h3{
+    padding: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.new{
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+    section {
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        margin: 150px;        
+        grid-gap: 2px;
+      }
+      
+      .box {
+        height: 250px;
+        display: grid;
+        grid-row: span 1;
+        grid-column: span 1;
+      }
+    }
